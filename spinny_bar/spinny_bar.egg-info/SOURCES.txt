@@ -1,0 +1,5 @@
+setup.py
+spinny_bar.egg-info/PKG-INFO
+spinny_bar.egg-info/SOURCES.txt
+spinny_bar.egg-info/dependency_links.txt
+spinny_bar.egg-info/top_level.txt
