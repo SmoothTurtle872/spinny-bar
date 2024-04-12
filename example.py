@@ -7,9 +7,9 @@ from colorama import Fore
 colorama.init(autoreset=True)
 
 def defaults():
-    spinner = spinny_bar.spinners.spinner(message="A Default Spinner")
-    spinnerBar = spinny_bar.spinners.spinnerBar(message="A Default Spinnerbar")
-    progressBar = spinny_bar.progressBars.progressBar(message="A Default Progress bar")
+    spinner = spinny_bar.spinner(message="A Default Spinner")
+    spinnerBar = spinny_bar.spinnerBar(message="A Default Spinnerbar")
+    progressBar = spinny_bar.progressBar(message="A Default Progress bar")
     
     spinner.start()
     time.sleep(2)
@@ -24,9 +24,9 @@ def defaults():
     progressBar.endBar()
 
 def customising():
-    customSpinner = spinny_bar.spinners.spinner(message="A Customised Spinner Spinner", chars=["+","x"], speed=0.2)
-    customSpinnerBar = spinny_bar.spinners.spinnerBar(message="A Customised Spinnerbar", barCaps=["]", "["], barEmpty="|", barFilled="█", barLen=10, filledLen=4)
-    customProgressBar = spinny_bar.progressBars.progressBar(message="A Customised Progress bar", caps=["",""], empty=f"{Fore.RED}─", full=f"{Fore.GREEN}─")
+    customSpinner = spinny_bar.spinner(message="A Customised Spinner Spinner", chars=["+","x"], speed=0.2)
+    customSpinnerBar = spinny_bar.spinnerBar(message="A Customised Spinnerbar", barCaps=["]", "["], barEmpty="|", barFilled="█", barLen=10, filledLen=4)
+    customProgressBar = spinny_bar.progressBar(message="A Customised Progress bar", caps=["",""], empty=f"{Fore.RED}─", full=f"{Fore.GREEN}─")
     
     customSpinner.start()
     time.sleep(2)
@@ -41,9 +41,9 @@ def customising():
     customProgressBar.endBar()
     
 def clearAtEnd():
-    clearSpinner  = spinny_bar.spinners.spinner(message="A clearing Spinner", clearAtEnd=True)
-    clearSpinnerBar  = spinny_bar.spinners.spinnerBar(message="A clearing Spinnerbar", clearAtEnd=True)
-    clearProgressBar  = spinny_bar.progressBars.progressBar(message="A clearing Progress bar", clearAtEnd=True)
+    clearSpinner  = spinny_bar.spinner(message="A clearing Spinner", clearAtEnd=True)
+    clearSpinnerBar  = spinny_bar.spinnerBar(message="A clearing Spinnerbar", clearAtEnd=True)
+    clearProgressBar  = spinny_bar.progressBar(message="A clearing Progress bar", clearAtEnd=True)
     
     clearSpinner.start()
     time.sleep(2)
