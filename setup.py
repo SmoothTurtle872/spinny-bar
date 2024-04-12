@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 with open("README.md") as des:
-    long_description = des.read().encode("utf-8")
+    long_description = des.read()
 
 setup(
     name="spinny_bar",
