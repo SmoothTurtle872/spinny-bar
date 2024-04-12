@@ -200,3 +200,9 @@ class progressBar(barBase):
         """
         print(f"\r{self.bar}", end="")
         
+    def endBar(self):
+        if self.clearAtEnd:
+            print(f"\r{" "*len(self.bar)}", end="\r")
+        else:
+            print()
+        
